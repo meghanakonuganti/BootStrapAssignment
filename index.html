@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title>Code a Responsive Website with Twitter Bootstrap 3</title>
+		<meta name="description" content="Learn how to code your first responsive website with the new Twitter Bootstrap 3.">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="includes/css/styles.css">
+		
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+		
+	</head>
+	<body>
+	
+		<div class="container" id="main">
+		
+			<div class="navbar navbar-fixed-top">
+				<div class="container">
+					
+					<!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+					<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				
+					<a class="navbar-brand" href="/"><img src="images/logos.jpg" alt="Your Logo"></a>
+					
+					<div class="nav-collapse collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav">
+							<li class="active">
+								<a href="#">Home</a>
+							</li>
+							
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"></strong></a>
+								
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#">Registration</a>
+									</li>
+									
+									<li>
+										<a href="#">Booking</a>
+									</li>
+									
+									<li>
+										<a href="#">Available</a>
+									</li>
+									
+									<li class="divider"></li>
+									
+									<li class="dropdown-header">More Services</li>
+									
+									<li>
+										<a href="#">AirLine </a>
+									</li>
+									
+									<li>
+										<a href="#">Social Media Marketing</a>
+									</li>
+								</ul><!-- end dropdown-menu -->
+							</li>
+						</ul>
+						
+						<form class="navbar-form pull-left">
+							<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+							<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+						</form><!-- end navbar-form -->
+						
+						<ul class="nav navbar-nav pull-right">
+							<li class="dropdown">
+								<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Account <strong class="caret"></strong></a>
+								
+								<ul class="dropdown-menu">
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-wrench"></span> Settings</a>
+									</li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-refresh"></span> Update Profile</a>
+									</li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-briefcase"></span> Billing</a>
+									</li>
+									
+									<li class="divider"></li>
+									
+									<li>
+										<a href="#"><span class="glyphicon glyphicon-off"></span> Sign out</a>						
+									</li>
+								</ul>
+							</li>
+						</ul><!-- end nav pull-right -->
+					</div><!-- end nav-collapse -->
+				
+				</div><!-- end container -->
+			</div><!-- end navbar -->
+			
+			
+			<div class="carousel slide" id="myCarousel">
+			
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+					<li data-slide-to="1" data-target="#myCarousel"></li>
+					<li data-slide-to="2" data-target="#myCarousel"></li>
+				</ol>
+			
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner">
+					<div class="item active" id="slide1">
+						<div class="carousel-caption">
+							<h4>Bootstrap 3</h4>
+							<p>Learn how to build your first responsive website with the brand new Twitter Bootstrap 3!</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide2">
+						<div class="carousel-caption">
+							<h4>Learn to code a website in 4-hours!</h4>
+							<p>PSD to HTML5 &amp; CSS3 is a popular Udemy course that has helped thousands of aspiring web designers launch their web design career.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+					
+					<div class="item" id="slide3">
+						<div class="carousel-caption">
+							<h4>Web Hosting 101</h4>
+							<p>Learn how to buy a perfect domain name and hosting package, and get your website live on the web with ease.</p>
+						</div><!-- end carousel-caption-->
+					</div><!-- end item -->
+				</div><!-- carousel-inner -->
+				
+				<!-- Controls -->
+				<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+				<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+			
+			</div><!-- end myCarousel -->
+			<div class="jumbotron">
+        <h1>Welcome To Airways</h1>
+      </div>
+			
+			<div class="row" id="bigCallout">
+				<div class="col-12">
+					
+					<div class="alert alert-success alert-block fade in" id="successAlert">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						
+						<h4>Success!</h4>
+						<p>You just made this element display by using jQuery. Click the "x" in the top right corner to close this bad boy.</p>
+					</div><!-- end alert -->
+					
+					<!-- Visible only on small devices -->
+					<div class="well well-small visible-sm">
+						<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-phone"></span> Give us a call!</a>
+					</div><!-- end well-small -->
+					
+					<div class="well">
+						<div class="page-header">
+							<h1>Indian Airlines <small>About airways.</small></h1>
+						</div><!-- end page-header -->
+						
+						<p class="lead">Indian Airlines, later Indian, was a major Indian airline based in Delhi and focused primarily on domestic routes, along with several international services to neighbouring countries in Asia</p>
+						
+						<a href="" class="btn btn-large btn-primary" id="alertMe">Click a nice big button</a>
+						<a href="" class="btn btn-large btn-link">or a secondary link</a>
+					</div><!-- end well -->
+					
+				</div><!-- end col-12 -->
+			</div><!-- end bigCallout -->
+			
+			
+			<div class="row" id="featuresHeading">
+				<div class="col-12">
+					<h2>More Features</h2>
+					<p class="lead">Humans have dreamed about flying for thousands of years. They probably watched birds, insects, bats, or leaves.</p>
+				</div><!-- end col-12 -->
+			</div><!-- end featuresHeading -->
+			
+			
+			<div class="row" id="features">
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">Short History</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/badge3.jpg" alt="HTML5" class="img-circle">
+						
+						<p>Around 350 BC the Chinese began to make kites from bamboo frames covered in paper and silk. Many of today's kites use a similar design. A kite is a form of a glider, as it does not technically fly, but instead sails on air current.</p>
+						
+						<a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-warning btn-block">Learn to code HTML5</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">History Of Flight</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/badge4.jpg" alt="CSS3" class="img-circle">
+						
+						<p>An airline is a company that provides air transport services for traveling passengers and freight. Airlines utilize aircraft to supply these services, and may form partnerships or alliances with other airlines for codeshare agreements. Generally, airline companies are recognized with an air.</p>
+						
+						<a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-danger btn-block">Style it up with CSS3</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+				
+				<div class="col-sm-4 feature">
+					<div class="panel">
+						<div class="panel-heading">
+							<h3 class="panel-title">World Airways</h3>
+						</div><!-- end panel-heading -->
+						<img src="images/bages.jpg" alt="Bootstrap 3" class="img-circle">
+						
+						<p>World Airways was founded in 1948 by Benjamin Pepper with the introduction of ex-Pan American World Airways Boeing 314 flying boats. Edward Daly, however is thought of as World's founder. He bought the airline in 1950 for $50,000 and proceeded to acquire DC-4s.</p>
+						
+						<a href="http://getbootstrap.com/" target="_blank" class="btn btn-info btn-block">More Bootstrap</a>
+					</div><!-- end panel -->
+				</div><!-- end feature -->
+			</div><!-- end features -->
+			
+			
+			<div class="row" id="moreInfo">
+				<div class="col-sm-6">
+					<h3>Neat Tabbable Content</h3>
+					<div class="tabbable">
+						<ul class="nav nav-tabs">
+							<li class="active"><a href="#tab1" data-toggle="tab">Section 1</a></li>
+							<li><a href="#tab2" data-toggle="tab">Section 2</a></li>
+						</ul>
+						<div class="tab-content">
+							<div class="tab-pane active" id="tab1">
+								<h4><span class="glyphicon glyphicon-map-marker"></span> Our Location <small>More like our favourite surf spot</small></h4>
+								
+								<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=waikiki+beach&amp;aq=&amp;sll=19.896766,-155.582782&amp;sspn=8.711424,11.854248&amp;ie=UTF8&amp;hq=&amp;hnear=Waikiki+Beach,+Honolulu,+Hawaii,+United+States&amp;t=m&amp;ll=21.277298,-157.8265&amp;spn=0.015996,0.036478&amp;z=14&amp;output=embed"></iframe>
+								
+								<p>Jet Airways was incorporated on April 1, 1992 as a private company with limited liability under the Companies Act. We commenced operations as an Air Taxi Operator on May 5, 1993 with a fleet of four leased Boeing 737 aircraft. We were granted scheduled airline status on January 14, 1995. Jet Airways became a deemed public company on July 1, 1996. On January 19, 2001, Jet Airways was reconverted into a private company. Jet Airways became a public company on December 28, 2004. At the time of incorporation of the Company, our shareholders were Mr. P.V.V. Chalam and Mrs. Anita Goyal. These shares were transferred to Tail Winds on May 12, 1994, and Mr. Naresh Goyal holds them on behalf of Tail Winds in terms of an RBI approval letter No. EC.BY.CO (S) 250/2251/TS/93/94 dated December 30, 1993. 
+
+                  Read more at: https://www.goodreturns.in/company/jet-airways-india/history.html	 We currently provide regular scheduled services to 42 destinations in India and two destinations outside India, operating 1,924 flights weekly. Our aircraft fleet has grown from four aircraft in 1993 to currently 42 aircraft comprising 34 Boeing 737 aircraft and eight ATR 72-500 aircraft. 
+
+                </p>
+                  
+							</div><!-- end tab-pane -->
+							
+							<div class="tab-pane" id="tab2">
+								<h4>Flight Services <small>Using Placehold.it</small></h4>
+								
+								<img src="images/fly.png" class="thumbnail pull-left" alt="Placeholder image">
+								
+								<p>A flight service station (FSS)[1] is an air traffic facility that provides information and services to aircraft pilots before, during, and after flights, but unlike air traffic control (ATC), is not responsible for giving instructions or clearances or providing separation. They do, however, relay clearances from ATC for departure or approaches. The people who communicate with pilots from an FSS are referred to as flight service specialists.
+
+                  The precise services offered by stations vary by country, but typical FSS services may include providing preflight briefings including weather and notices to airmen (NOTAMs); filing, opening, and closing flight plans; monitoring navigational aids (NAVAIDs); collecting and disseminating pilot reports (PIREPs) and airport surface weather observations; offering traffic advisories to aircraft on the ground or in flight; relaying instructions or clearances from air traffic control; relaying information from or about airborne aircraft to their home bases, military bases or homeland security, providing weather advisories to aircraft inflight, initiating search and rescue on missing VFR aircraft, and providing assistance in an emergency.</p>.
+								
+					
+								
+								<hr>
+								
+								<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal"><span class="glyphicon glyphicon-hand-up"></span> Click for a Modal Window!</a>
+								
+								<div class="modal fade" id="myModal">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<button class="close" data-dismiss="modal">&times;</button>
+												
+												<h4 class="modal-title">A Modal Window</h4>
+											</div><!-- end modal-header -->
+											<div class="modal-body">
+												<h4>Flight Management</h4>
+												
+												<p> A flight management system (FMS) is a fundamental component of a modern airliner's avionic.</p>
+												
+												<h4>Popovers in a modal</h4>
+												<a href="#" class="btn btn-danger pop" data-toggle="popover" data-placement="top" data-original-title="You clicked it!" data-content="I knew you would.">Don't click this button</a>
+												
+												<h4>Tooltips in a modal</h4>
+												<a href="" data-original-title="Tooltip" rel="tooltip">This link</a> should have a tooltip, and so should <a href="#" data-original-title="Woohoo!" rel="tooltip">this one</a>!
+												
+												<hr>
+												
+												<p><small class="text-muted">PS. This form doesn't do anything. Just a heads up.</small></p>
+												
+												<form class="form-horizontal">
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputName">Name</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputName" placeholder="Name" type="text">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputEmail">Email</label>
+														<div class="col-lg-10">
+															<input class="form-control" id="inputEmail" placeholder="Email" type="email">
+														</div>
+													</div>
+													
+													<div class="form-group">
+														<label class="col-lg-2 control-label" for="inputMessage">Message</label>
+														<div class="col-lg-10">
+															<textarea class="form-control" id="inputMessage" placeholder="Message" rows="3"></textarea>
+															<button class="btn btn-success pull-right" type="submit">Send!</button>
+														</div>
+													</div>
+												</form>
+											</div><!-- end modal-body -->
+											
+											<div class="modal-footer">
+												<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> <button class="btn btn-primary" type="button">Save changes</button>
+											</div><!-- end modal-footer -->
+										</div><!-- end modal-content -->
+									</div><!-- end modal-dialog -->
+								</div><!-- end myModal -->
+								
+							</div><!-- end tab-pane -->
+						</div><!-- end tab-content -->
+					</div><!-- end tabbable -->
+				</div><!-- end col-sm-6 -->
+				
+				<div class="col-sm-6">
+					<h3>Some Text Info</h3>
+					<p>Jet Airways Limited has filed its draft Red Herring Prospectus with the Securities and Exchange Board of India (Sebi) to enter the capital market with its initial public offering. The company will offer 17,266,801 (1.72 crore shares) equity shares of Rs 10 each for cash at a price to be decided through the book-building process. It is learnt that the value of each share will be Rs 870. The IPO proceeds will essentially be used to fund its international expansion plans. 
+					<h4>A List Group</h4>
+					
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Jet</h4>
+							<p class="list-group-item-text">Jet Airways (India) Ltd has informed BSE regarding a Press Release dated April 19, 2011 titled "Jet Airways conferred "Air Cargo Award of Excellence 2011" by Air Cargo World Magazine".</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Flight</h4>
+							<p class="list-group-item-text">According to a principle of aerodynamics called Bernoulli's law, fast-moving air is at lower pressure than slow-moving air, so the pressure above the wing is lower than the pressure below, and this creates the lift that powers the plane upward.Apr 17, 2018</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading">Helicopter</h4>
+							<p class="list-group-item-text">A helicopter, or chopper, is a type of rotorcraft in which lift and thrust are supplied by rotors. This allows the helicopter to take off and land vertically, to hover, and to fly forward, backward, and laterally.</p>
+						</a>
+					</div><!-- list-group -->
+					
+					<h5>A small Info</h5>
+					<p>- Jet Airways (India) Ltd has informed BSE regarding a Press Release dated August 27, 2012 titled "Jet Airways and ICICI bank launch Co-branded credit cards Exclusive Travel and Lifestyle benefits await the Country's Frequent Flyers". - Jet Airways (India) Ltd has informed BSE regarding a Press Release dated February 02, 2012, titled "Jet Airways Declared "Favourite Full-Service Airline" At The Outlook Traveller Awards 2011". 
+
+        </div><!-- end col-sm-6 -->
+			</div><!-- end moreInfo -->
+			
+			<hr>
+			
+			<div class="row" id="moreCourses">
+				<div class="col-12">
+					<h3>Learn more about Air Services</h3>
+					<div class="thumbnails row">
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/down.jpg" alt="PSD to HTML5 & CSS3">
+								
+								<div class="label label-success price"><span class="glyphicon glyphicon-tag"></span> <sup>$</sup>39</div>
+								
+								<div class="caption">
+									<h3>Prevailing Services</h3>
+									
+									<p>Jet Airways strives to cater for our customers with special needs.
+
+                    In order to serve you better, we request that you contact us and advise us of your specific needs at the time of booking, and at least 48 hours prior to your flight.
+                    
+                    You can visit 'Manage booking' to make certain requests, such as wheelchair assistance, stowing an assistive device or seat selection..</p>
+									
+									<p><a href="https://www.udemy.com/build-beautiful-html5-website/" class="btn btn-primary btn-small" target="_blank">Take course</a> <a href="https://www.udemy.com/build-beautiful-html5-website/" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+						
+						<div class="col-6">
+							<div class="thumbnail">
+								<img src="images/new1.jpg" alt="Web Hosting 101">
+								
+								<div class="label label-info price"><span class="glyphicon glyphicon-tag"></span> Free</div>
+								
+								<div class="caption">
+									<h3>Ticket Booking</h3>
+									
+									<p>Booking an airline ticket can seem complicated when there are so many websites, airlines and travel agents to choose from. Flight prices also fluctuate all the time, making the booking process even more complicated  However, even booking 54 days before your trip is not guaranteed to get you the lowest fare eparture (From) / Arrival (To) airports. When using "Multiple destinations" option, select all airports in accordance with your flight plan, both departure and arrival airports The booking engine does not allow reserving trips for more than 4 destinations (Departure and Arrival)
+                    .</p>
+									
+									<p><a href="https://www.udemy.com/web-hosting-101/" class="btn btn-primary btn-small" target="_blank">Take course</a> <a href="https://www.udemy.com/web-hosting-101/" target="_blank" class="btn btn-small btn-link">Learn more</a></p>
+								</div><!-- end caption -->
+							</div><!-- end thumbnail -->
+						</div><!-- end col-6 -->
+					</div><!-- end row -->
+				</div><!-- end col-12 -->
+			</div><!-- end moreCourses -->
+		</div><!-- end container -->
+		
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+					<h6>Copyright &copy; 2019 {meghana}</h6>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-4">
+						<h6>About Us</h6>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div><!-- end col-sm-4 -->
+					
+					<div class="col-sm-2">
+						<h6>Navigation</h6>
+						<ul class="unstyled">
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Links</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6>Follow Us</h6>
+						<ul class="unstyled">
+							<li><a href="#">Twitter</a></li>
+							<li><a href="#">Facebook</a></li>
+							<li><a href="#">Google Plus</a></li>
+						</ul>
+					</div><!-- end col-sm-2 -->
+					
+					<div class="col-sm-2">
+						<h6>Coded with <span class="glyphicon glyphicon-heart"></span> by Brad</h6>
+					</div><!-- end col-sm-2 -->
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</footer>
+	
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+	
+	</body>
+</html>
+
